@@ -34,7 +34,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    	<title></title>
+    	<title>mxnticek</title>
 
 	<meta name="description" content="">
 
@@ -63,6 +63,27 @@
 				<div data-component="grid" class="row">
 					<div class="col-md-6 col-md-offset-3">
 						<div data-container="true">
+							<iframe
+  frameborder="0"
+  height="380"
+  id="github-iframe"
+  src=""
+  width="100%"
+></iframe>
+<script>
+  fetch(
+    "https://spotify.plainrock127.xyz/player.html"
+  )
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      var iframe = document.getElementById("github-iframe");
+      iframe.src =
+        "data:text/html;charset=utf-8;base64," +
+        encodeURIComponent(data["content"]);
+    });
+</script>
 							<div data-content="true" data-component="text">
 							</div>
 							<div data-component="heading" data-content="true" id="IarXR">
