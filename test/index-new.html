@@ -57,28 +57,29 @@
             <a href="https://earnapp.com/i/6jkmuis" class="btn btn-primary">Learn More</a>
         </section>
         
-        <div class="modal" id="earnappModal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-        
-              <!-- Modal Header -->
-              <div class="modal-header">
-                <h4 class="modal-title">EarnApp Compliance</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>
-        
-              <!-- Modal body -->
-              <div class="modal-body">
-                EarnApp is a product of Bright Data Inc, and is fully compliant with both GDPR and CCPA regulations. We take the privacy and security of our users very seriously and make sure that all data collection is done in a responsible and ethical manner.
-              </div>
-        
-              <!-- Modal footer -->
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
+<!-- Checkmark with tooltip -->
+<span class="checkmark" data-toggle="tooltip" data-placement="top" title="Click for more information on GDPR and CCPA compliance">
+    <i class="fas fa-check"></i>
+  </span>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="EarnApp-Modal" tabindex="-1" role="dialog" aria-labelledby="EarnApp-ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="EarnApp-ModalLabel">GDPR and CCPA Compliance</h5>
+        </div>
+        <div class="modal-body">
+          <p>Our company is fully compliant with the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA). We take the protection of personal data very seriously and have implemented appropriate technical and organizational measures to ensure compliance with both regulations.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+        </button>
+        </div>
+        </div>
           </div>
         </div>
-      </div>
+  
         
         <div id="brightvpn">
             <h2 class="text-center mb-5">Stay safe and browse the web for free with BrightVPN</h2>
@@ -106,6 +107,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <script>
+            //initialize tooltip
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+
+    //open modal on checkmark click
+    $(".checkmark").click(function () {
+        $("#EarnApp-Modal").modal("show");
+    });
         const links = document.querySelectorAll('a');
         const clicks = {};
         links.forEach((link) => {
