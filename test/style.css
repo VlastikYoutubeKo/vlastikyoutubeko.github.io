@@ -32,3 +32,16 @@ a {
 .d-flex:hover .hover-box {
     display: block;
 }
+
+.checkmark {
+    font-size: 1.5rem;
+  }
+  
+  .checkmark.text-success {
+    color: green;
+  }
+  
+  .checkmark.text-danger {
+    color: red;
+  }
+  
