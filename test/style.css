@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+    color: #0077c9;
+    font-size: 36px;
+    margin-top: 50px;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+a {
+    color: #0077c9;
+    text-decoration: none;
+    font-weight: bold;
+}
