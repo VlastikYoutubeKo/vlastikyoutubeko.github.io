@@ -17,8 +17,10 @@ links.forEach((link) => {
         gtag('event', 'click', {
             'event_category': 'outbound',
             'event_label': link.href,
+            'event_action': link.text,
             'transport_type': 'beacon'
-        });
+          });
+          
         // display the number of clicks for the link
         console.log(`Link ${link.href} has been clicked ${clicks[link.href]} times`);
     });
