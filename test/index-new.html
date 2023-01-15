@@ -117,7 +117,7 @@
                                 var name_product = "Third App";
                                 var name_company = "Third Company";
                                 $("#complianceModalLabel").html(name_product + " Compliance");
-                                $("#complianceModal .modal-body p").html("Our company, " + name_company + ", is fully compliant with the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA). We take the protection of personal data very seriously and have implemented appropriate technical and organizational measures to ensure compliance with both regulations.");
+                                $("#complianceModal .modal-body p").html("Our company, " + name_company + " and our service, " + name_product + ", is fully compliant with the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA). We take the protection of personal data very seriously and have implemented appropriate technical and organizational measures to ensure compliance with both regulations.");
                             });
                         </script>
         
@@ -144,34 +144,13 @@
     
 
     <script src="script.js"></script>
-    <script>
-        $(document).ready(function() {
-        // Initialize tooltip
-        $('[data-toggle="tooltip"]').tooltip();
+    <script src="script2.js"></script>
 
-        // Listen for click event on checkmark
-        $('.checkmark').click(function() {
-            $('#EarnApp-Modal').modal('show');
-        });
-    });
-        const links = document.querySelectorAll('a');
-        const clicks = {};
-        links.forEach((link) => {
-            clicks[link.href] = 0;
-            link.addEventListener('click', () => {
-                clicks[link.href]++;
-                gtag('event', 'click', {
-                    'event_category': 'links',
-                    'event_label': link.href,
-                    'event_action': 'click'
-                });
-            });
-            link.addEventListener('mouseover', () => {
-                const randomColor = getRandomColor();
-                link.style.transition = "color 0.5s ease-in-out";
-                link.style.color = randomColor;
-            });
-        });
+
+        <script>
+            /* jebe to tu no
+            takže tu nečum pokuď nechceš umřít
+            KEKW */
         function getRandomColor() {
             const letters = '0123456789ABCDEF';
             let color = '#';
