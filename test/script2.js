@@ -10,9 +10,4 @@ links.forEach((link) => {
             'event_action': 'click'
         });
     });
-    link.addEventListener('mouseover', () => {
-        const randomColor = getRandomColor();
-        link.style.transition = "color 0.5s ease-in-out";
-        link.style.color = randomColor;
-    });
 });
