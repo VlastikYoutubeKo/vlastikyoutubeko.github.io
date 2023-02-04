@@ -70,7 +70,7 @@
             </div>
         </section>
         <section id="morereferralcodes">
-            <h2 class="text-center mb-5">More referral codes <i class="fas fa-check text-warning" data-toggle="modal" data-target=""></i></h2>
+            <h2 class="text-center mb-5">More referral codes <i class="fas fa-check text-warning" data-toggle="modal" id="jjbtn"></i></h2>
             <p>Want to earn even more cash? Check out my additional referral codes on my <b>linktree</b> for even more earning opportunities.</p>
             <div class="text-center">
                 <a href="https://linktr.ee/menticek" class="btn btn-secondary">More referral codes</a>
@@ -176,7 +176,12 @@
   
 
                         <script>
-                            $("#thirdAppComplianceModalButton").click(function(){
+    // Get the modal element
+            
+            // Get the button that opens the modal
+            var tlacitko = document.getElementById("jjbtn");
+            
+                            tlacitko.click(function(){
                                 var name_product = "Third App";
                                 var name_company = "Third Company";
                                 $("#complianceModalLabel").html(name_product + " Compliance");
