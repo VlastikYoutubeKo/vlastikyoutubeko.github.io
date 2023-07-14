@@ -1,235 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Earn some extra cash</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Links</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+  <style>
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+    }
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F9QFGECKWK"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-F9QFGECKWK', { 'cookie_flags': 'SameSite=None; Secure' });
-    </script>
+    .footer-links li {
+      margin: 0 10px;
+    }
+
+    .text-button {
+      border: none;
+      background: none;
+      color: blue;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Earn App & BrightVPN</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">EarnApp</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#brightvpn">BrightVPN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#morereferralcodes">More Referral Codes</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main class="container my-5">
-        <section id="home">
-            <h1 class="text-center mb-5 animate__animated animate__bounceInDown">Make some extra cash this new year!</h1>
-            <p>Are you looking for a way to earn some extra cash this new year? Look no further! EarnApp offers you the opportunity to share your bandwidth and earn money. Plus, with BrightVPN, you can browse the web for free. Check out both options using the links provided below and earn even more with additional referral codes on my linktree, where I will be adding more codes if I find them worth it. Don't miss out on this opportunity to make some quick cash.</p>
-            <div class="text-center">
-                <a href="#earnapp" class="btn btn-primary mr-3 animate__animated animate__bounceIn animate__delay-2s">EarnApp</a>
-                <a href="#brightvpn" class="btn btn-primary mr-3 animate__animated animate__bounceIn animate__delay-3s">BrightVPN</a>
-            </div>
-        </section>
-        <section id="earnapp">
-            <h2>EarnApp <span class="checkmark text-success animate__animated animate__slideInRight" data-toggle="tooltip" data-placement="top" title="Click for more information on GDPR and CCPA compliance" id="myBtn">
-                <i class="fas fa-check"></i>
-            </span>
-    </h2>
-            <p class="text-center">EarnApp allows you to share your bandwidth and earn money. Major companies pay to use your IP to conduct business activities like market research, website testing, and price and product comparisons.</p>
-            <div class="text-center"><a href="https://earnapp.com/i/6jkmuis" class="btn btn-primary animate__animated animate__bounceIn">Learn More</a></div>
-        </section>
-          
-          
-        
-        <section id="brightvpn">
-            <h2 class="text-center mb-5"><b>BrightVPN</b><span class="checkmark text-success animate__animated animate__slideInRight" data-toggle="tooltip" data-placement="top" title="Click for more information on GDPR and CCPA compliance" id="myBtn2">
-                <i class="fas fa-check"></i>
-            </span></h2>
-            <p><b>BrightVPN</b> is a free VPN service that allows you to browse the web safely and securely. Plus, it's completely free!</p>
-            <div class="text-center">
-                <a href="https://brightvpn.com/?r=6jkmuis" class="btn btn-success animate__animated animate__bounceIn">Get BrightVPN</a>
-            </div>
-        </section>
-        <section id="morereferralcodes">
-            <h2 class="text-center mb-5">More referral codes <i class="fas fa-check text-warning" data-toggle="modal" id="jjbtn"></i></h2>
-            <p>Want to earn even more cash? Check out my additional referral codes on my <b>linktree</b> for even more earning opportunities.</p>
-            <div class="text-center">
-                <a href="https://linktr.ee/menticek" class="btn btn-secondary">More referral codes</a>
-            </div>
-        </section>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">My Links</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://url.wz.sk/profile" target="_blank">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://url.wz.sk/profile1" target="_blank">Profile 1</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-        <!-- Compliance Modal -->
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close">&times;</span>
-                  <p>Bright Data is committed to protecting the privacy of our customers. We comply with global privacy laws, including the EU's GDPR and California's CCPA. Our privacy policy can be found on our website and our customers can contact us with any questions or concerns. We collect and retain non-personal and personal information from our customers, such as IP address, name, email address, and payment information. We may also record audio or video calls for compliance and internal guidelines. When creating an account, customers can link their account to a third-party account, such as Gmail, and we will have access to basic information from that account.<br>Bright Data Ltd. takes data privacy seriously and is fully compliant with global privacy laws including the GDPR and CCPA. This applies to all of their services including EarnApp and BrightVPN. For more information, please visit our privacy policy at https://earnapp.com/privacy</p>
-                </div>
-          </div>
-          <style>
-            .modal {
-              display: none;
-              position: fixed;
-              z-index: 1;
-              left: 0;
-              top: 0;
-              width: 100%;
-              height: 100%;
-              overflow: auto;
-              background-color: rgba(0,0,0,0.4);
-            }
-            .modal-content {
-              background-color: #fefefe;
-              margin: 15% auto;
-              padding: 20px;
-              border: 1px solid #888;
-              width: 80%;
-            }
-            .close {
-              color: #aaa;
-              float: right;
-              font-size: 28px;
-              font-weight: bold;
-            }
-            .close:hover,
-            .close:focus {
-              color: black;
-              text-decoration: none;
-              cursor: pointer;
-            }
-          </style>
-          <script>// Get the modal element
-            var modal = document.getElementById('myModal');
-            
-            // Get the button that opens the modal
-            var btn = document.getElementById("myBtn");
+  <div class="container mt-5">
+    <h2>My Links for Newcomers!</h2>
+    <ul class="list-group mt-3">
+      <li class="list-group-item">
+        <h4>EarnApp</h4>
+        <p></p>
+        <a href="http://url.wz.sk/ref1" target="_blank" class="btn btn-primary" onclick="gtag('event', 'link_click', {'event_category': 'Links', 'event_label': 'EarnApp'});">Go to EarnApp</a>
+      </li>
+      <li class="list-group-item">
+        <h4>Bright VPN</h4>
+        <p></p>
+        <a href="http://url.wz.sk/ref2" target="_blank" class="btn btn-primary" onclick="gtag('event', 'link_click', {'event_category': 'Links', 'event_label': 'Bright VPN'});">Go to Bright VPN</a>
+      </li>
+      <li class="list-group-item">
+        <h4>Peer2Profit</h4>
+        <p>(Since Peer2Profit switched to Telegram, use this ref link 😊)</p>
+        <a href="http://url.wz.sk/ref3" target="_blank" class="btn btn-primary" onclick="gtag('event', 'link_click', {'event_category': 'Links', 'event_label': 'Peer2Profit'});">Go to Peer2Profit</a>
+      </li>
+      <li class="list-group-item">
+        <h4>Slice</h4>
+        <p>(You browse. They pay. Shows ads, for which you get paid some amount.)</p>
+        <a href="http://url.wz.sk/slice" target="_blank" class="btn btn-primary" onclick="gtag('event', 'link_click', {'event_category': 'Links', 'event_label': 'Slice'});">Go to Slice</a>
+      </li>
+      <li class="list-group-item">
+        <h4>CloudCollab</h4>
+        <p>You can both buy proxies and be a peer. Clients have Proxy for 0.3$/GB, which is cheap! Peer Payment is as low as 0.1$ as tested by me. They are in need of Australian IPs, so if you are from Australia, join, and tell them that @mxnticek.5377 invited you, and you could get some bonus or something, idk</p>
+        <a href="http://url.wz.sk/ref4" target="_blank" class="btn btn-primary" onclick="gtag('event', 'link_click', {'event_category': 'Links', 'event_label': 'CloudCollab'});">Go to CloudCollab</a>
+      </li>
+      <li class="list-group-item">
+        <h4>CryptoTab Browser</h4>
+        <p>(Easy way for Bitcoin "Mining"! Browse the net and get Bitcoin. By using my link to register, and then inviting others via your link, you can earn money as long as you/they surf the net.)</p>
+        <a href="http://url.wz.sk/ref5" target="_blank" class="btn btn-primary" onclick="gtag('event', 'link_click', {'event_category': 'Links', 'event_label': 'CryptoTab Browser'});">Go to CryptoTab Browser</a>
+      </li>
+    </ul>
+  </div>
 
-            // Get the button that opens the modal
-            var btn2 = document.getElementById("myBtn2");
-            
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-            
-            // When the user clicks the button, open the modal 
-            btn.onclick = function() {
-              modal.style.display = "block";
-            }
+  <footer class="bg-light text-center py-4 mt-5">
+    <ul class="footer-links">
+      <li>
+       <a href="http://url.wz.sk/ref1" onclick="gtag('event', 'link_click', {'event_category': 'Links', 'event_label': 'EarnApp'});" class="text-button">EarnApp</a>
+      </li>
+      <li>
+       <a href="http://url.wz.sk/ref2" onclick="gtag('event', 'link_click', {'event_category': 'Links', 'event_label': 'Bright VPN'});" class="text-button">Bright VPN</a>
+      </li>
+      <li>
+        <a href="http://url.wz.sk/ref3" onclick="gtag('event', 'link_click', {'event_category': 'Links', 'event_label': 'Peer2Profit'});" class="text-button">Peer2Profit</a>
+      </li>
+      <li>
+        <a href="http://url.wz.sk/slice"  onclick="gtag('event', 'link_click', {'event_category': 'Links', 'event_label': 'Slice'});" class="text-button">Slice</a>
+      </li>
+      <li>
+        <a href="http://url.wz.sk/ref4" onclick="gtag('event', 'link_click', {'event_category': 'Links', 'event_label': 'CloudCollab'});" class="text-button">CloudCollab</a>
+      </li>
+      <li>
+        <a href="http://url.wz.sk/ref5" onclick="gtag('event', 'link_click', {'event_category': 'Links', 'event_label': 'CryptoTab Browser'});" class="text-button">CryptoTab Browser</a>
+      </li>
+    </ul>
+      &copy;<span id="currentYear"></span><a href="http://plainrockfm.wz.cz" target="_blank" class="btn btn-link" onclick="gtag('event', 'link_click', {'event_category': 'Footer', 'event_label': 'Vlastimil Novotny - Web'});">Vlastiml Novotný</a>
+  </footer>
 
-            btn2.onclick = function() {
-              modal.style.display = "block";
-            }
-            
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-              modal.style.display = "none";
-            }
-            
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-              if (event.target == modal) {
-                modal.style.display = "none";
-              }
-            }
-            </script>
-          <!-- No Compliance Modal -->
-          <div class="modal fade" id="noComplianceModal" tabindex="-1" role="dialog" aria-labelledby="noComplianceModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="noComplianceModalLabel">Another App: GDPR and CCPA Non-Compliance</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <p>Another App and Another Company is not compliant with the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA). We do not recommend using this service as it may put your personal data at risk.</p>
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                </div>
-                </div>
-                  </div>
-                </div>
-               <!-- <section id="another-app">
-                            <h2>Another App ( <i class="fas fa-times text-danger" data-toggle="modal" data-target="#noComplianceModal"></i> )</h2>
-                            <p>Random text go brrrrrrrrrrrrrrrrrrrrr</p>
-                        </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-                        <section id="thirdapp">
-                            <h2>Third App<span class="checkmark text-warning" data-toggle="tooltip" data-placement="top" title="Click for more information on GDPR and CCPA compliance" id="thirdAppComplianceModalButton">
-                                <i class="fas fa-check"></i>
-                            </span></h2>
-                            
-                            <p>Random text go brrrrrrrrrrrrrrrrrrrrr</p>
-                        </section> -->
-  
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'G-F9QFGECKWK');
+  </script>
 
-                        <script>
-    // Get the modal element
-            
-            // Get the button that opens the modal
-            var tlacitko = document.getElementById("jjbtn");
-            
-                            tlacitko.click(function(){
-                                var name_product = "Third App";
-                                var name_company = "Third Company";
-                                $("#complianceModalLabel").html(name_product + " Compliance");
-                                $("#complianceModal .modal-body p").html("Our company, " + name_company + " and our service, " + name_product + ", is fully compliant with the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA). We take the protection of personal data very seriously and have implemented appropriate technical and organizational measures to ensure compliance with both regulations.");
-                            });
-                        </script>
-    </main>
-    <footer class="bg-light py-3">
-        <div class="container">
-            <p class="text-center" id="copyright"></p>
-        </div>
-    </footer>
-    
-
-    <script src="script.js"></script>
-    <script>
-        const links = document.querySelectorAll('a');
-        const clicks = {};
-        links.forEach((link) => {
-            clicks[link.href] = 0;
-            link.addEventListener('click', () => {
-                clicks[link.href]++;
-                gtag('event', 'click', {
-                    'event_category': 'links',
-                    'event_label': link.href,
-                    'event_action': 'click'
-                });
-            });
-        });
-        function getRandomColor() {
-            const letters = '0123456789ABCDEF';
-            let color = '#';
-            for (let i = 0; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
-            }
-            return color;
-        }
-
-        const copyright = document.getElementById("copyright")
-copyright.innerHTML = `Copyright &copy; ${new Date().getFullYear()} Vlastiml Novotný <br> (Disclaimer: I do not own EarnApp, BrightVPN and their logos, rights belong to Bright Data Inc.)`
-
-    </script>
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=G-F9QFGECKWK" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
 </body>
 </html>
